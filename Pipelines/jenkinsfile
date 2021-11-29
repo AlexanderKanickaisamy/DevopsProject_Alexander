@@ -1,7 +1,7 @@
 node {
     // some block
 
- // Get Artifcatory Server Instace Detials
+ // Get Artifactory Server Instace Details
 
  def server = Artifactory.server "01"
  def buildInfo = Artifactory.newBuildInfo()
@@ -10,8 +10,8 @@ node {
  def project_path = "03-App-Code/petclinic-code"
 
 
- stage('Git ChechOut') {
-  git branch: 'main', url: 'https://github.com/amitvashisttech/devops-mindtree-25-Nov-2021.git' 
+ stage('Git CheckOut') {
+  git branch: 'main', url: 'https://github.com/AlexanderKanickaisamy/DevopsProject_Alexander.git' 
  }
  
  dir(project_path) {
@@ -65,7 +65,7 @@ stage('Publish Build Info'){
  }
 
  
- stage('Getting Ready For Ansible Deployment'){
+ stage('Getting Ready For Terraform Deployment'){
      sh "cp -rf target/petclinic.war terraform-code/ansible-code/roles/petclinic/files/"
  }
 
