@@ -3,7 +3,7 @@ variable "key_name" {
 }
 
 variable "pvt_key_name" {
-  default = "/tmp/mozilla_labuser0/terraform-key-pair.pem"
+  default = "/home/labuser/Downloads/terraform-key-pair.pem"
 }
 
 
