@@ -3,7 +3,7 @@ variable "key_name" {
 }
 
 variable "pvt_key_name" {
-  default = "/home/labuser/Downloads/terraform-key-pair.pem"
+  default = "/root/.ssh/terraform-key-pair.pem"
 }
 
 
